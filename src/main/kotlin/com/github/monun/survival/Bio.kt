@@ -396,6 +396,26 @@ abstract class Bio(
                 player.apply {
                     addPotionEffect(
                         PotionEffect(
+                            PotionEffectType.JUMP,
+                            32768,
+                            2,
+                            false,
+                            false,
+                            false
+                        )
+                    )
+                    addPotionEffect(
+                        PotionEffect(
+                            PotionEffectType.SPEED,
+                            32768,
+                            1,
+                            false,
+                            false,
+                            false
+                        )
+                    )
+                    addPotionEffect(
+                        PotionEffect(
                             PotionEffectType.POISON,
                             32768,
                             0,
