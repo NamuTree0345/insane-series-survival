@@ -180,6 +180,14 @@ abstract class Bio(
 
         override fun onUpdate() {
             zombieFlag?.moveTo(flagLocation)
+            player.addPotionEffect(
+                PotionEffect(
+                    PotionEffectType.BLINDNESS,
+                    32768,
+                    1,
+                    false, false, false
+                )
+            )
         }
 
         override fun applyAttribute() {
@@ -441,7 +449,9 @@ abstract class Bio(
                 victim.noDamageTicks = 0
             }
 
-            event.damage *= damage
+            //event.damage *= damage
+
+            event.damage = event.damage * 1.5
 
             if (SurvivalConfig.witherDuration > 0) {
                 victim.addPotionEffect(

@@ -19,6 +19,7 @@ import org.bukkit.inventory.ShapelessRecipe
 import org.bukkit.plugin.java.JavaPlugin
 import org.bukkit.potion.PotionEffect
 import org.bukkit.potion.PotionEffectType
+import xyz.namutree0345.insane.BloodEffect
 import java.io.File
 import kotlin.random.Random.Default.nextInt
 
@@ -54,6 +55,7 @@ class SurvivalPlugin : JavaPlugin() {
 
         server.apply {
             pluginManager.registerEvents(EventListener(survival), this@SurvivalPlugin)
+            pluginManager.registerEvents(BloodEffect(), this@SurvivalPlugin)
             scheduler.runTaskTimer(
                 this@SurvivalPlugin,
                 TickTask(
