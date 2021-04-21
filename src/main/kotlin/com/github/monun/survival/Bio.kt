@@ -451,7 +451,7 @@ abstract class Bio(
 
             //event.damage *= damage
 
-            event.damage = event.damage * 1.5
+            event.damage = event.damage * 1.2
 
             if (SurvivalConfig.witherDuration > 0) {
                 victim.addPotionEffect(
