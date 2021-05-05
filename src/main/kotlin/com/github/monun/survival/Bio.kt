@@ -394,6 +394,7 @@ abstract class Bio(
         override fun onUpdate() {
             if (ticks % 200 == 0) {
                 player.apply {
+                    addPotionEffect(PotionEffect(PotionEffectType.GLOWING, 32768, 1, false, false, false))
                     addPotionEffect(
                         PotionEffect(
                             PotionEffectType.JUMP,
