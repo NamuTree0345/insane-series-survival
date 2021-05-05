@@ -188,6 +188,14 @@ abstract class Bio(
                     false, false, false
                 )
             )
+            player.addPotionEffect(
+                PotionEffect(
+                    PotionEffectType.SPEED,
+                    32768,
+                    2,
+                    false, false, false
+                )
+            )
         }
 
         override fun applyAttribute() {

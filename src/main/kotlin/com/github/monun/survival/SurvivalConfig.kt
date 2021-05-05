@@ -32,16 +32,16 @@ object SurvivalConfig {
     var summonCooldownTick = 20L * 60L * 5L
 
     @Config
-    var worldSize = 4096.0
+    var worldSize = 2048.0
 
     @Config
     var humanHealth = 20.0
 
     @Config
-    var zombieHealth = 20.0
+    var zombieHealth = 14.0
 
     @Config
-    var superZombieHealth = 20.0
+    var superZombieHealth = 16.0
 
     @Config
     var hyperZombieJumpAmplifier = 12
