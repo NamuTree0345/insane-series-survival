@@ -38,7 +38,7 @@ object SurvivalConfig {
     var humanHealth = 20.0
 
     @Config
-    var zombieHealth = 14.0
+    var zombieHealth = 10.0
 
     @Config
     var superZombieHealth = 16.0
